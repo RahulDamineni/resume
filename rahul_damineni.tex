@@ -111,12 +111,22 @@
       \resumeItemListStart
         \resumeItem{Achievement}
           {Conceived and developed several high-value features in the core product.}
-        \resumeItem{Fake Domain Finder}
-          {Discovered 100+ malicious websites impersonating bands \& trademarks of clients by building a cloud monitor. Set up pipelines for data collection, periodic training, and evaluation of the model. Classified visual and textual content using image processing and bag-of-words based SVM classifier. \textcolor{MidnightBlue}{}}
-        \resumeItem{Threat Detector}
-          {Classified thousands of tweets, forum \& blog posts to identify mentions related to vulnerabilities, data breaches, and cyber threats. Engineered a Hierarchical Attention-based RNN to replace an n-grams based model and increased accuracy by 13\%. \textcolor{MidnightBlue}{}}
         \resumeItem{ML APIs as a service}
-          {Developed an async RESTful micro-service that deploys all ML models and serve classification requests. The architecture design accommodates A/B testing \& eases pushing new models to production. It uses a publish-subscribe pattern to decouple front-end and scale classification workers on demand. \textcolor{MidnightBlue}{}}
+          {Developed an async RESTful micro-service that served 200k requests per day. The design accommodates worker scaling, A/B testing \& adding new models. It uses a publish-subscribe pattern to be fault-tolerant and scale workers on demand. \texttt{Python-Flask, RabbitMQ, MongoDB, NginX} \textcolor{MidnightBlue}{}}
+        \resumeItem{Threat Detector}
+          {Collected \& classified thousands of tweets, forum \& blog posts to identify mentions related to vulnerabilities, data breaches, and cyber threats. Engineered a Hierarchical Attention-based RNN which improved the task accuracy by 13\%. \texttt{Python-Requests, Selenium, Keras, TensorFlow} \textcolor{MidnightBlue}{}}
+        \resumeItem{Fake Domain Finder}
+          {Discovered 100+ malicious websites impersonating trademarks of clients by building a cloud monitor. Made pipelines for data collection, training, and inference around text classification \& template matching skills. \texttt{Sklearn, OpenCV, MongoDB, Selenium, SystemUtils} \textcolor{MidnightBlue}{}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UNAR Labs}{Portland, ME}
+      {AI/ML Research Intern}{June 2020 - October 2020}
+      \resumeItemListStart
+        \resumeItem{SAT Digitalizer Service}
+          {Developed \& deployed a general-purpose job scheduler that batch-processes digitization jobs and exposes the results through a REST API. The stack was containerized \& orchestrated using docker-swarm. \texttt{Redis Queue, SQLAlchemy, PostgreSQL, Docker, Python-Flask} \textcolor{MidnightBlue}{}}
+        % \resumeItem{Plot2Data}
+        %   {To communicate graphical data to visually impaired users, training a neural network to generate tabular data from images. Data is automatically generated using plotting libraries, augmented by extracting text using OCR, annotating textual regions, and generating features using RNN \& CNN based encoders. \textcolor{MidnightBlue}{}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -126,17 +136,7 @@
         \resumeItem{Achievement}
           {Optimized a supply chain component that would bridge the gap in production goals and save \$15M annually by collaborating with stakeholders and the engineering team at Kimberly Clark}
         \resumeItem{Plan Rate Forecasting}
-          {Perdicted throughput of production mills by performing exploratory data analysis (EDA) to identify influential parameters, conceived and tested hypotheses, engineered features, and trained a predictive model that forecasts rate with 7\% MSE. Packaged this model as a simulator for the end consumer. \textcolor{MidnightBlue}{}}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {UNAR Labs}{Portland, ME}
-      {AI/ML Research Intern}{June 2020 - October 2020}
-      \resumeItemListStart
-        \resumeItem{SAT PDF Digitalizer}
-          {To enable visually impaired users to access SAT preparation material, developed a micro-service that digitalizes, indexes, and exposes PDF contents for querying. \textcolor{MidnightBlue}{}}
-        \resumeItem{Plot2Data}
-          {To communicate graphical data to visually impaired users, training a neural network to generate tabular data from images. Data is automatically generated using plotting libraries, augmented by extracting text using OCR, annotating textual regions, and generating features using RNN \& CNN based encoders. \textcolor{MidnightBlue}{}}
+          {Predicted throughput of production mills by performing exploratory data analysis (EDA) to identify influential parameters, conceived and tested hypotheses, engineered features, and trained a predictive model that forecasts rate with 7\% MSE. Packaged this model as a simulator for the end consumer. \textcolor{MidnightBlue}{}}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -146,13 +146,13 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Clip-tionary}
-      {To memorize and pronounce a new word easily, shows scenes from TV shows and movies where it was uttered. \textcolor{MidnightBlue}{\href{https://github.com/RahulDamineni/tv-dict}{(code)} \href{https://github.com/RahulDamineni/tv-dict/blob/master/CS562_ProjectSketch.pdf}{(design document)}}}
+      {To memorize and pronounce a new word easily, shows scenes from TV shows and movies where it was uttered. \texttt{ReactJS, Python-Flask, MongoDB, Docker, WebRTC} \textcolor{MidnightBlue}{\href{https://github.com/RahulDamineni/tv-dict}{(code)} \href{https://github.com/RahulDamineni/tv-dict/blob/master/CS562_ProjectSketch.pdf}{(design document)}}}
     \resumeSubItem{Anonymous Author Identifier}
-      {To identify latent clues in writing styles, trained an LSTM based binary classifier, and a DBMS program that determines if a text is written by existing authors in DB. \textcolor{MidnightBlue}{\href{https://github.com/RahulDamineni/anonymous_author_matcher}{(code)} \href{https://github.com/RahulDamineni/anonymous_author_matcher/blob/master/anon_author_identifier_report.pdf}{(report)}}}
+      {To identify latent clues in writing styles, trained an LSTM based binary classifier, and a DBMS program that determines if a text is written by existing authors in DB. \texttt{PyTorch, torchtext} \textcolor{MidnightBlue}{\href{https://github.com/RahulDamineni/anonymous_author_matcher}{(code)} \href{https://github.com/RahulDamineni/anonymous_author_matcher/blob/master/anon_author_identifier_report.pdf}{(report)}}}
     \resumeSubItem{DARPA Subterranean Challenge}
-      {Trained a MobileNet with Single Shot Detector head to detect and localize the competition's artifacts with mAP of 58\% (@0.75 IoU). \textcolor{MidnightBlue}{\href{https://www.subt-explorer.com/}{(website)}}}
+      {Trained a MobileNet with Single Shot Detector head to detect and localize the competition's artifacts with mAP of 58\% (@0.75 IoU). \texttt{nvidia-docker, TensorFlow Object Detection API} \textcolor{MidnightBlue}{\href{https://www.subt-explorer.com/}{(website)}}}
     \resumeSubItem{Super Logger}
-      {Project planning and logistics management platform for road construction projects. Surveyed for user stories, designed a data harvesting framework around the actors, and developed most of the MVP. \textcolor{MidnightBlue}{\href{https://drive.google.com/file/d/1H9IJ4kVDP79thjI6kPTr0LBxHkd46nlo/view?usp=sharing}{(pitch)}}}
+      {Project planning and logistics management platform for road construction projects. Surveyed for user stories, designed a data harvesting framework around the actors, and developed most of the MVP. \texttt{ReactJS, NodeJS, MongoDB, Docker, GCP: compute engine, container registry, GKE} \textcolor{MidnightBlue}{\href{https://drive.google.com/file/d/1H9IJ4kVDP79thjI6kPTr0LBxHkd46nlo/view?usp=sharing}{(pitch)}}}
   \resumeSubHeadingListEnd
 
 
