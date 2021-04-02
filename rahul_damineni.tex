@@ -116,7 +116,7 @@
         \resumeItem{Threat Detector}
           {Classified thousands of tweets, forum \& blog posts to identify mentions related to vulnerabilities, data breaches, and cyber threats. Engineered a Hierarchical Attention-based RNN to replace an n-grams based model and increased accuracy by 13\%. \textcolor{MidnightBlue}{}}
         \resumeItem{ML APIs as a service}
-          {Developed an async RESTful micro-service that served 200k requests per day. The design accommodates worker scaling, A/B testing \& adding new models. It uses a publish-subscribe pattern to be fault-tolerant and scale workers on demand. \textcolor{MidnightBlue}{}}
+          {Developed an async RESTful micro-service (based on publish-subscribe pattern) with worker scaling, fault-tolerance \& A/B testing capabilities. \textcolor{MidnightBlue}{}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -124,9 +124,9 @@
       {Associate (Data Science)}{September 2018 -- April 2019}
       \resumeItemListStart
         \resumeItem{Achievement}
-          {Optimized a supply chain component that would bridge the gap in production goals and save \$15M annually by collaborating with stakeholders and the engineering team at Kimberly Clark}
+          {Optimized a supply chain component that would bridge the gap in production goals and save \$15M annually. Packaged the model as a simulator for business stakeholders' adaption.}
         \resumeItem{Plan Rate Forecasting}
-          {Predicted throughput of production mills by performing exploratory data analysis (EDA) to identify influential parameters, conceived and tested hypotheses, engineered features, and trained a predictive model that forecasts rate with 7\% MSE. Packaged this model as a simulator for the end consumer. \textcolor{MidnightBlue}{}}
+          {Predicted throughput of production mills by performing exploratory data analysis (EDA), conceiving hypotheses, engineering features, to train a regressive model that forecasts rate with 7\% MSE.\textcolor{MidnightBlue}{}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -137,7 +137,7 @@
           {Developed \& deployed a general-purpose job scheduler that batch-processes digitization jobs and exposes the results through a REST API. The stack was containerized \& orchestrated using docker-swarm. \textcolor{MidnightBlue}{}}
         \vspace{-11pt}
         \resumeItem{Plot2Data}
-          {To communicate graphical data to visually impaired users, training a neural network to generate tabular data from images. Data is automatically generated using plotting libraries, augmented by extracting text using OCR, annotating textual regions, and generating features using RNN \& CNN based encoders. \textcolor{MidnightBlue}{}}
+          {To communicate graphical data to visually impaired users, training a neural network to generate tabular data from images. Novel network architecture uses RNN \& CNN encoders with slot based decoder. \textcolor{MidnightBlue}{}}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -146,6 +146,8 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubItem{DARPA Machine Common Sense}
+      {Encoded free-fall kinematic common sense into an agent with RGB \& Depth sensory inputs. Vision module comprised of semantic object detection \& tracking capabilities. \textcolor{MidnightBlue}{\href{https://github.com/MCS-OSU/mcs_eval3/tree/component/gravity.dspr}{(code)}}}
     \resumeSubItem{Clip-tionary}
       {To memorize and pronounce a new word easily, shows scenes from TV shows and movies where it was uttered. \textcolor{MidnightBlue}{\href{https://github.com/RahulDamineni/tv-dict}{(code)} \href{https://github.com/RahulDamineni/tv-dict/blob/master/CS562_ProjectSketch.pdf}{(design document)}}}
     \resumeSubItem{Anonymous Author Identifier}
